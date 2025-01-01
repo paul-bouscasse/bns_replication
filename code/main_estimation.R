@@ -7,8 +7,8 @@ rm(list = ls())
 closeAllConnections()
 
 # Set path in which bns_replication is located
-path0 <- 'C:/Users/91358/Dropbox/Documents/Recherche/1. Research/Malthus Model'
 #path0 <- 'C:/Users/paulb/Dropbox/Documents/Recherche/1. Research/Malthus Model'
+path0 <- 'C:/Users/91358/Dropbox/Documents/Recherche/1. Research/Malthus Model'
 #path0 <- '/home/datahub/files'
 
 # Other paths
@@ -36,8 +36,8 @@ thin0 <- ceiling(iters/(2*10^4)) # thinning of draws
 
 # Estimation: each nt is a specification
 start_time <- Sys.time()
-#for (nt in c(101, 103, 105:106, 111:116, 121:123, 205, 231:235)) {
-for (nt in c(105)) { # use this line to run a subset of the specs
+for (nt in c(101, 103, 105:106, 111:116, 121:123, 205, 231:235)) {
+#for (nt in c(101)) { # unmute this line to run a subset of the specs
   print(nt)
   source(paste0(path_code,'/estimation.R'), print.eval=TRUE)
 }

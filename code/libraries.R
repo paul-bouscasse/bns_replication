@@ -17,6 +17,10 @@ for (pck in required_packages) {
   }
   lapply(pck, library, character.only = TRUE)
 }
+for (pck in required_packages) {
+  print(pck)
+  print(packageVersion(pck))
+}
 
 # Stan options
 rstan_options(auto_write = TRUE)

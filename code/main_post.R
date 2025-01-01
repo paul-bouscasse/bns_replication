@@ -6,8 +6,8 @@
 rm(list = ls())
 
 # Set path in which bns_replication is located
-path0 <- 'C:/Users/91358/Dropbox/Documents/Recherche/1. Research/Malthus Model'
 #path0 <- 'C:/Users/paulb/Dropbox/Documents/Recherche/1. Research/Malthus Model'
+path0 <- 'C:/Users/91358/Dropbox/Documents/Recherche/1. Research/Malthus Model'
 #path0 <- '/home/datahub/files'
 
 # Other paths
